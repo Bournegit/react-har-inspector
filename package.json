@@ -44,8 +44,8 @@
     "test": "jest src",
     "test-updatesnapshot": "jest src --update-snapshot",
     "test-watch": "npm run test -- --watch",
-    "prepare":"npm run build"		  
-},
+    "prepare": "npm run build"
+  },
   "dependencies": {
     "@babel/runtime": "^7.8.7",
     "is-dom": "^1.1.0",
