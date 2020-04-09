@@ -1,6 +1,6 @@
 {
   "name": "react-har-inspector",
-  "version": "5.0.2",
+  "version": "5.0.3",
   "description": "Power of Browser DevTools inspectors right inside your React app",
   "keywords": [
     "devtools",
