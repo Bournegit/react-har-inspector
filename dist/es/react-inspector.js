@@ -2196,9 +2196,7 @@ var DataContainer = function DataContainer(_ref) {
     return /*#__PURE__*/React.createElement("tr", {
       key: row,
       style: styles.tr
-    }, /*#__PURE__*/React.createElement("td", {
-      style: _objectSpread$6({}, styles.td, {}, borderStyles.none)
-    }, row), columns.map(function (column) {
+    }, columns.map(function (column) {
       var rowData = rowsData[i]; // rowData could be
       //  object -> index by key
       //    array -> index by array index
@@ -2292,7 +2290,6 @@ var TH = function TH(_ref2) {
 
 var HeaderContainer = function HeaderContainer(_ref) {
   var _ref$indexColumnText = _ref.indexColumnText,
-      indexColumnText = _ref$indexColumnText === void 0 ? '(index)' : _ref$indexColumnText,
       _ref$columns = _ref.columns,
       columns = _ref$columns === void 0 ? [] : _ref$columns,
       sorted = _ref.sorted,
@@ -2307,12 +2304,7 @@ var HeaderContainer = function HeaderContainer(_ref) {
     style: styles.base
   }, /*#__PURE__*/React.createElement("table", {
     style: styles.table
-  }, /*#__PURE__*/React.createElement("tbody", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement(TH, {
-    borderStyle: borderStyles.none,
-    sorted: sorted && sortIndexColumn,
-    sortAscending: sortAscending,
-    onClick: onIndexTHClick
-  }, indexColumnText), columns.map(function (column) {
+  }, /*#__PURE__*/React.createElement("tbody", null, /*#__PURE__*/React.createElement("tr", null, columns.map(function (column) {
     return /*#__PURE__*/React.createElement(TH, {
       borderStyle: borderStyles.solid,
       key: column,
