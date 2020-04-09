@@ -19,13 +19,7 @@ const HeaderContainer = ({
       <table style={styles.table}>
         <tbody>
           <tr>
-            <TH
-              borderStyle={borderStyles.none}
-              sorted={sorted && sortIndexColumn}
-              sortAscending={sortAscending}
-              onClick={onIndexTHClick}>
-              {indexColumnText}
-            </TH>
+            
             {columns.map(column => (
               <TH
                 borderStyle={borderStyles.solid}

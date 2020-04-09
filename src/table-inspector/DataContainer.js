@@ -16,7 +16,7 @@ const DataContainer = ({ rows, columns, rowsData }) => {
         <tbody>
           {rows.map((row, i) => (
             <tr key={row} style={styles.tr}>
-              <td style={{ ...styles.td, ...borderStyles.none }}>{row}</td>
+              
 
               {columns.map(column => {
                 const rowData = rowsData[i];
